@@ -65,7 +65,10 @@ object calculator extends App{
     var result: Double = 0 + res
     var i = 0
 
-    if (arr(0) != "*" || arr(0) != "/" || arr(0) != "+" || arr(0) != "-") {
+    if (arr(0) == "*" || arr(0) == "/" || arr(0) == "+" || arr(0) == "-") {
+      i += 0
+    }
+    else {
       i += 1
       result += f(arr(0))
     }
